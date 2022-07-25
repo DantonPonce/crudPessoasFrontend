@@ -1,0 +1,43 @@
+section {
+    padding-top: 25px;
+
+    &.formulario {
+
+        h2 {
+            color        : #fff;
+            border-bottom: #fafafa 1px solid;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+        }
+
+        form {
+
+            .botoes {
+                button {
+                    transition: .3s;
+
+                    &:nth-child(1) {
+                        color       : #fff;
+                        background  : rgba(255, 255, 255, .2);
+                        margin-right: 10px;
+
+                        &:hover {
+                            background: rgba(255, 255, 255, .4);
+
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        color     : #fff;
+                        background: #46a35e;
+
+                        &:hover {
+                            background: #266d39;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

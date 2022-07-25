@@ -1,0 +1,76 @@
+section {
+    padding-top: 25px;
+
+    &.home {
+        .filtro {
+            width: 100%;
+
+            mat-form-field {
+                width: 50%;
+            }
+
+            button {
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                position       : relative;
+                top            : -8px;
+                margin-left    : 25px;
+                background     : none;
+                color          : #fff;
+                border         : 1px solid #424242;
+                cursor         : pointer;
+            }
+        }
+
+        .title {
+            margin-bottom: 25px;
+            width        : 100%;
+
+            h2 {
+                color        : #fff;
+                margin-bottom: 0px;
+            }
+
+            button {
+                color     : #fff;
+                background: #46a35e;
+                transition: .3s;
+
+                &:hover {
+                    background: #266d39;
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+
+            th {
+                &:last-child {
+                    text-align: center;
+                }
+            }
+
+            td {
+                &:last-child {
+                    text-align: center;
+                }
+
+                button {
+                    cursor    : pointer;
+                    transition: .3s;
+                    opacity   : .7;
+
+                    &:nth-child(1) {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

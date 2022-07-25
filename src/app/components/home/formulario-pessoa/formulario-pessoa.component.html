@@ -1,0 +1,31 @@
+<section class="formulario">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 d-flex flex-column">
+                <h2>{{tituloFormulario}}</h2>
+                <form [formGroup]="formulario" class="d-flex flex-column" (ngSubmit)="enviarFormulario()">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Nome</mat-label>
+                        <input matInput formControlName="nome">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Sobrenome</mat-label>
+                        <input matInput formControlName="sobrenome">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Idade</mat-label>
+                        <input matInput formControlName="idade">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Profissao</mat-label>
+                        <input matInput formControlName="profissao">
+                    </mat-form-field>
+                    <div class="botoes d-flex justify-content-end">
+                        <button mat-button (click)="voltar()">Voltar</button>
+                        <button mat-button type="submit">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
